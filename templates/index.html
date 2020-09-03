@@ -1,0 +1,39 @@
+<!doctype html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css?version=3" />
+    <title>Animefy</title>
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Animefy your world</h1>
+        </div>
+        <div id="loading"></div>
+        <div id="content">
+            <h1>Upload a file</h1>
+            {% if message %}
+            <p class="message">{{ message | safe }}</p>
+            {% endif %}
+            <form action="/" method=POST enctype=multipart/form-data>
+                <input id=upload type=file name=file>
+                <input id=submit type=submit value=Upload onclick="loading()">
+            </form>
+        </div>
+    </div>
+
+
+    <script type='text/javascript'>
+        function loading() {
+            console.log("Processing the Image")
+            var loading = document.getElementById("loading");
+            var content = document.getElementById("content")
+            loading.style.display = "block"
+            content.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>

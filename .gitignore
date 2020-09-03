@@ -1,0 +1,8 @@
+*DS_Store
+.vscode/
+*.pyc 
+*__pycache__/
+*.pth
+*env/
+static/Input_img/*
+static/Output_img/*

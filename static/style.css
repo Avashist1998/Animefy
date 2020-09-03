@@ -1,0 +1,77 @@
+:root {
+    --main-bg-color: #D49E67;
+    --second-bg-color: #D48739;
+    --main-text-color: #673400;
+    --second-text-color: #A05100;
+    --border-color:#774B1E;
+}
+div#loading{
+    display:none;
+    background: url(/static/loading.gif) no-repeat;
+    height:80vh;
+    background-size:auto;
+    background-position:center;
+    background-origin: content-box;
+    cursor: wait;
+}
+div#header{
+    background-color:var(--second-bg-color);
+    color:var(--main-text-color);
+    text-align: center;
+}
+#Title{
+    text-align: center;
+}
+.message {
+    text-align: center;
+    color: var(--main-text-color);
+	padding: 5px;
+	border:var(--border-color) dotted 3px;
+	margin-top: 2rem;
+}
+body {
+    background-color:var(--main-bg-color);
+    padding:10px;
+}
+h1{
+    color: var(--main-text-color);
+    text-align: center;
+}
+p{
+    color:var(--second-text-color);
+    text-align:center;
+    font-size:20px;
+}
+
+#container{
+    margin-right: auto;
+    margin-left: auto;
+
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+#upload{
+    size: 400px;
+    margin: auto;
+  
+}
+#submit {
+    width:400px;
+    margin:auto;
+}
+
+
+.output_image{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    background-color:var(--border-color);
+    height:auto;
+    width:auto;
+    max-width:80vw;
+    padding:10px;  
+}

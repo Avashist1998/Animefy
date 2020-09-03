@@ -1,0 +1,42 @@
+<!doctype html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css?version=3" />
+    <title>Animefy</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Animefy your world</h1>
+    </div>
+    <h1>Animified Images</h1>
+
+    <p>Hayoa Style</p>
+    {% if data.Hayao_output_file %}
+    <!-- <p class="Hayao_output_file">{{ data.Hayao_output_file | safe }}</p> -->
+    <img id="Hayao_output_file" src="{{url_for('static', filename='Output_img/'+data.Hayao_output_file)}}"
+        class=output_image onclick="window.open(src,'_blank');">
+    {% endif %}
+
+    <p>Paprika Style</p>
+    {% if data.Paprika_output_file %}
+    <!-- <p class="Paprika_output_file">{{ data.Paprika_output_file | safe }}</p> -->
+    <img id="Paprika_output_file" src="{{url_for('static', filename='Output_img/'+data.Paprika_output_file)}}"
+        class=output_image onclick="window.open(src,'_blank');">
+    {% endif %}
+
+    <p>Shinkai Style</p>
+    {% if data.Shinkai_output_file %}
+    <!-- <p class="Shinkai_output_file">{{ data.Shinkai_output_file | safe }}</p> -->
+    <img id="Shinkai_output_file" src="{{url_for('static', filename='Output_img/'+data.Shinkai_output_file)}}"
+        class=output_image onclick="window.open(src,'_blank');">
+    {% endif %}
+
+    <p>Hayao Style</p>
+    {% if data.Hayao_output_file %}
+    <!-- <p class="Hayao_output_file">{{ data.Hayao_output_file | safe }}</p> -->
+    <img id="Hayao_output_file" src="{{url_for('static', filename='Output_img/'+data.Hayao_output_file)}}"
+        class=output_image onclick="window.open(src,'_blank');">
+    {% endif %}
+
+</body>
