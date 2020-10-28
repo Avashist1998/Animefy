@@ -7,6 +7,7 @@ A web application, which converts images into anime/cartoons.
 
 ```
 pip install -r requirements.txt
+python app.py
 ```
 
 ## Results
