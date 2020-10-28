@@ -1,13 +1,13 @@
 :root {
-    --main-bg-color: #D49E67;
-    --second-bg-color: #D48739;
-    --main-text-color: #673400;
-    --second-text-color: #A05100;
-    --border-color:#774B1E;
+    --main-bg-color: #006662;
+    --second-bg-color: #004643;
+    --main-text-color: #022A29;
+    --second-text-color: #00211f;
+    --border-color:#001918;
 }
 div#loading{
     display:none;
-    background: url(/static/loading.gif) no-repeat;
+    background: url(/static/Loading.gif) no-repeat;
     height:80vh;
     background-size:auto;
     background-position:center;
